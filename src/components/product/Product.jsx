@@ -1,9 +1,9 @@
 
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+// import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 // import "leaflet/dist/leaflet.css"; // Leaflet CSS
-import L from "leaflet"; // Leaflet core
+// import L from "leaflet"; // Leaflet core
 import Header from "../header/header";
 import Footer from "../footer/Footer";
 import Basket from "../myBasket/basket";
