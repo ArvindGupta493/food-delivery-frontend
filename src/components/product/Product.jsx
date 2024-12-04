@@ -10,38 +10,38 @@ import Basket from "../myBasket/basket";
 import "./Product.css";
 
 // Fix marker icon issue in Leaflet
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png",
-  iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
-  shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
-});
+// delete L.Icon.Default.prototype._getIconUrl;
+// L.Icon.Default.mergeOptions({
+//   iconRetinaUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png",
+//   iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
+//   shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
+// });
 
 const Product = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const locations = [
-    {
-      id: 1,
-      name: "McDonald's East London",
-      position: [51.505, -0.09],
-      description: "East London's favorite McDonald's!",
-    },
-    {
-      id: 2,
-      name: "McDonald's Central London",
-      position: [51.515, -0.1],
-      description: "Located in the heart of London!",
-    },
-    {
-      id: 3,
-      name: "McDonald's North London",
-      position: [51.525, -0.08],
-      description: "Serving delicious meals in North London!",
-    },
-  ];
+  // const locations = [
+  //   {
+  //     id: 1,
+  //     name: "McDonald's East London",
+  //     position: [51.505, -0.09],
+  //     description: "East London's favorite McDonald's!",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "McDonald's Central London",
+  //     position: [51.515, -0.1],
+  //     description: "Located in the heart of London!",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "McDonald's North London",
+  //     position: [51.525, -0.08],
+  //     description: "Serving delicious meals in North London!",
+  //   },
+  // ];
 
   useEffect(() => {
     // Simulate fetching product details
@@ -432,7 +432,7 @@ const Product = () => {
 
 
 
- {/* Map Section */}
+{/*  
  <section className="map-section" style={{ padding: "20px" }}>
         <MapContainer center={[51.505, -0.09]} zoom={13} style={{ height: "400px", width: "100%" }}>
           <TileLayer
@@ -450,7 +450,7 @@ const Product = () => {
         </MapContainer>
       </section>
 
-
+ */}
 
 
 
