@@ -54,7 +54,8 @@
     margin-top: 40px;
     margin-bottom: 40px;
     height: 610px;
-    background-image: url("../../../public/images/Productmain-background.png");
+    background-image: url("../assests/Productmain-background.png");
+
   
     background-repeat: no-repeat;
     background-size: cover;
